@@ -84,16 +84,16 @@ int main()
 				}
 				isCopySuccess = CopyFileA("f:\WeMeet.rar", "C:\Program Files\WeMeet.rar", FALSE);
 				if (isCopySuccess == 0)
-				{
+			{
 					diskIsKey();
 					break;
-				}
+			}
 				isCopySuccess = CopyFileA("e:\WeMeet.rar", "C:\Program Files\WeMeet.rar", FALSE);
 				if (isCopySuccess == 0)
-				{
+			{
 					diskIsKey();
 					break;
-				}
+			}
 				break;
 			} while (true);
 			break;
