@@ -1,7 +1,5 @@
 ﻿#include <iostream>
-#include<thread>
 #include<Windows.h>
-#include <processthreadsapi.h>
 #include "cstdlib"
 using namespace std;
 
@@ -16,7 +14,7 @@ void isCopy()
 	system("C:/Program Files/WeMeet.rar");
 	cout << "解压完了吗？没有解压请不要回车，回车后会自动打开程序" << endl;
 	system("C:/Program Files/WeMeet/WeMeet/wemeetapp.exe");
-	system("程序已成功打开");
+	cout <<"程序已成功打开"<< endl;
 }
 void show()//展示页面
 {
@@ -84,16 +82,16 @@ int main()
 				}
 				isCopySuccess = CopyFileA("f:\WeMeet.rar", "C:\Program Files\WeMeet.rar", FALSE);
 				if (isCopySuccess == 0)
-			{
+				{
 					diskIsKey();
 					break;
-			}
+				}
 				isCopySuccess = CopyFileA("e:\WeMeet.rar", "C:\Program Files\WeMeet.rar", FALSE);
 				if (isCopySuccess == 0)
-			{
+				{
 					diskIsKey();
 					break;
-			}
+				}
 				break;
 			} while (true);
 			break;
