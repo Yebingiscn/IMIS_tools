@@ -11,9 +11,9 @@ void diskIsKey()
 void isCopy()
 {
 	cout << "复制成功,准备调用解压程序,解压完后请关闭解压程序，以继续" << endl;
-	system("C:/Program Files/WeMeet.rar");
+	system("C:\Program Files\WeMeet.rar");
 	cout << "解压完了吗？没有解压请不要回车，回车后会自动打开程序" << endl;
-	system("C:/Program Files/WeMeet/WeMeet/wemeetapp.exe");
+	system("C:\Program Files\WeMeet\WeMeet\wemeetapp.exe");
 	cout <<"程序已成功打开"<< endl;
 }
 void show()//展示页面
